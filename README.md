@@ -9,6 +9,9 @@ Run the following command to download [ElasticSearch](https://www.elastic.co/gui
 git clone https://github.com/samq-ghdemo/ElasticSearch-RPM-Python.git && cd ElasticSearch-RPM-Python
 wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.8.23.rpm
 wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.8.12.rpm
+wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-oss-6.4.2.rpm
+wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-oss-6.8.23.rpm
+wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-oss-6.8.12.rpm
 ```
 ### Mend Scan
 Use the following commands to scan with the unified agent
