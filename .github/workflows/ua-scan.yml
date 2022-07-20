@@ -13,7 +13,6 @@ jobs:
       WS_WSS_URL: https://saas.whitesourcesoftware.com/agent
       WS_PRODUCTNAME: ${{github.event.repository.name}}
       WS_PROJECTNAME: ${{github.ref}}
-      WS_FILESYSTEMSCAN: false
       
     runs-on: ubuntu-latest
 
@@ -29,14 +28,7 @@ jobs:
         wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-oss-6.8.12.rpm
         pwd && ls
 
-
     - name: WhiteSource Unified Agent Scan
-      env:
-        WS_APIKEY: ${{secrets.APIKEY}}
-        WS_USERKEY: ${{secrets.USERKEY}}
-        WS_WSS_URL: https://saas.whitesourcesoftware.com/agent
-        WS_PRODUCTNAME: ${{github.event.repository.name}}
-        WS_PROJECTNAME: ${{github.ref}}
       run: |
         echo Downloading WhiteSource Unified Agent
         curl -LJO https://unified-agent.s3.amazonaws.com/wss-unified-agent.jar
