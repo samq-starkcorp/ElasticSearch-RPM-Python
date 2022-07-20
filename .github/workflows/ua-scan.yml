@@ -27,6 +27,7 @@ jobs:
         wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-oss-6.4.2.rpm
         wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-oss-6.8.23.rpm
         wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-oss-6.8.12.rpm
+        pwd && ls
 
 
     - name: WhiteSource Unified Agent Scan
