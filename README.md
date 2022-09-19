@@ -23,3 +23,4 @@ export WS_PRODUCTNAME=$(basename -s .git $(git config --get remote.origin.url))
 export WS_PROJECTNAME=$WS_PRODUCTNAME-$(git branch --show-current)
 java -jar wss-unified-agent.jar
 ```
+
